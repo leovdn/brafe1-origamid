@@ -20,6 +20,12 @@ body {
 	margin: 0 auto;
 }
 
+@media (max-width: 739px) {
+	.container {
+		flex-direction: column;
+		max-width: 300px;
+	}
+}
 /* Menu */
 
 .menu {
@@ -32,9 +38,14 @@ body {
 	color: #fff;
 	font-size: 1.125em;
 }
+
+.menu-logo {
+	margin: 0 10px;
+}
 .menu-nav {
     flex: 1;
 	align-self: center;
+	margin: 0 10px;
 }
 .menu-nav ul {
     float: right;
@@ -46,6 +57,17 @@ body {
 	padding: 10px;
 }
 
+@media (max-width: 739px) {
+	.menu-nav {
+		margin: 0px;
+	}
+	.menu-logo {
+		margin: 0px;
+	}
+	.menu-nav ul li a {
+		padding-left: 0px;
+	}
+}
 /* Intro */
 
 .intro {
@@ -73,6 +95,12 @@ body {
 .intro p {
 	font-style: italic;
 	font-size: 1.125em;
+}
+
+@media (max-width: 739px) {
+	.intro {
+		padding: 60px 0 ;
+	}
 }
 
 /* Sobre */
@@ -116,6 +144,13 @@ body {
 	margin: 20px auto;
 	max-width: 460px;
 	text-align: center;
+}
+
+@media (max-width: 739px) {
+	.sobre-item {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
 }
 
 /* Produtos */
@@ -181,6 +216,13 @@ h2.produtos-mineiro::before {
 	padding: 16px 0;
 }
 
+
+@media (max-width: 739px) {
+	.produtos-item {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
 /* Locais */
 .locais {
 	padding: 60px 0;
@@ -221,12 +263,24 @@ h2.produtos-mineiro::before {
 	padding: 10px 20px;
 }
 
+@media (max-width: 739px) {
+	.locais-img, .locais-info {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
 /* Assine */
 
 .assine {
 	background: #e7e4d8;
+	padding: 30px 0;
 }
 
+.assine-info {
+	flex: 1;
+	margin: 0 10px;
+}
 .assine-info h2 {
 	font-size: 2.25em;
 }
@@ -235,12 +289,21 @@ h2.produtos-mineiro::before {
 	font-size: 1.5em;
 	font-style: italic;
 }
-
+.assine form {
+	flex: 1;
+	display: flex;
+	margin: 0 10px;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
 .assine form label {
 	display: none;
 }
 
 .assine input {
+	flex: 1;
+	align-self: flex-start;
+	padding: 10px;
 	border: 3px solid #252525;
 	background: none;
 	font-size: 1.5em;
@@ -249,6 +312,9 @@ h2.produtos-mineiro::before {
 }
 
 .assine button {
+	flex: 1;
+	align-self: flex-start;
+	padding: 13px;
 	background: #252525;
 	border: none;
 	font-family: Georgia, serif;
@@ -258,13 +324,34 @@ h2.produtos-mineiro::before {
 	cursor: pointer;
 }
 
+@media (max-width: 739px) {
+	.assine-info {
+		margin: 0 0 20px 0;
+	}
+	.assine form {
+		margin: 0px;
+	}
+}
 /*Footer*/
 
 .footer {
 	background: #d6d3c8;
+	padding: 40px 0;
 }
 
 .footer p {
 	font-size: 1.125em;
 	line-height: 1.4em;
+	margin: 0 10px;
+	flex: 1;
+}
+
+.footer-img {
+	margin: 0 10px;
+}
+
+@media (max-width: 739px) {
+	.footer-img, .footer p {
+		margin: 10px 0;
+	}
 }
